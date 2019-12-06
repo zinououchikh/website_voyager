@@ -35,7 +35,9 @@
 @endsection
 
 @section('javascript')
-    $(document).ready(function(){
-        $('.carousel').carousel()
-    })
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel()
+        })
+    </script>
 @endsection
