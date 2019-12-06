@@ -15,6 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/index', 'SiteController@index');
+
+Route::get('/blog', function () {
+    return view('site.blog');
+});
+
+Route::get('/about', function () {
+    return view('site.about');
+});
+
+Route::get('/contact', function () {
+    return view('site.contact');
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
